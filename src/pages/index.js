@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => (
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
       tagline="We Lead the Residents to You"
-      title="workin around"
+      title="workin around netlify"
       styleClass="default-background"
     />
     <Plan />
