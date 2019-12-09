@@ -1,7 +1,7 @@
 import React from "react"
 import BackgroundImage from "gatsby-background-image"
 import { Link } from "gatsby"
-import Image from "./image"
+//import Image from "./image"
 
 export default function BackgroundSection({
   img,
@@ -31,9 +31,7 @@ export default function BackgroundSection({
               </Link>
             </div>
 
-            <div className="col-sm-6 text-center">
-              <Image />
-            </div>
+            <div className="col-sm-6 text-center">{/* <Image /> */}</div>
           </div>
         </div>
       </section>

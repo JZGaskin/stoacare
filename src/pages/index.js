@@ -11,7 +11,7 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      tagline="Put down the computer, we'll take the website from here."
+      tagline="We Lead the Residents to You"
       title="Take your time back and let us design and manage your website. You started your business because you're passionate about something. That something is not web design."
       styleClass="default-background"
     />
@@ -22,7 +22,7 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "BlueGrad-background.jpg" }) {
+    img: file(relativePath: { eq: "background.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
