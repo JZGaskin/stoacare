@@ -1,0 +1,86 @@
+:root {
+  --mainBrown: #2d1e1f;
+  --mainYellow: rgb(255, 210, 9);
+  --mainGrey: #575652;
+  --mainWhite: #fff;
+  --mainDark: #222;
+}
+
+body {
+  background: var(--mainWhite);
+  color: var(--mainDark);
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Candara", candara, monospace !important;
+  letter-spacing: 0.1rem !important;
+}
+.text-yellow {
+  color: var(--mainYellow);
+}
+.store-icon {
+  cursor: pointer;
+  color: var(--mainYellow);
+  font-size: 2rem;
+}
+
+.nav-item {
+  padding-right: 15px;
+}
+
+.default-background {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
+  background-position: center;
+  background-size: cover;
+}
+
+.btn-yellow {
+  color: var(--mainGrey);
+  border-color: var(--mainYellow);
+  background-color: var(--mainYellow);
+  border-radius: 40px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 15px;
+}
+.btn-yellow:hover {
+  background: var(--mainYellow);
+  color: var(--mainBrown);
+  border-radius: 40px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 15px;
+}
+
+.footer {
+  background: #224a7d;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.plan-title {
+  color: #224a7d;
+}
+
+.plan-icon {
+  font-size: 6rem;
+  color: #209cee;
+}
+
+.plan-label {
+  color: #224a7d;
+  font-size: 1.5rem;
+}
