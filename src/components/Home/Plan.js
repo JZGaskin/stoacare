@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import { FaHandshake, FaFileContract, FaSmileBeam } from "react-icons/fa"
 
 export default function Plan() {

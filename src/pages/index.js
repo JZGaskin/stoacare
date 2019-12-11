@@ -5,6 +5,7 @@ import Info from "../components/Home/Info"
 import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 import Plan from "../components/Home/Plan"
+import Buy from "../components/Home/Buy"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -15,6 +16,7 @@ const IndexPage = ({ data }) => (
       title="workin around netlify"
       styleClass="default-background"
     />
+    <Buy />
     <Plan />
     <Info />
   </Layout>
