@@ -2,12 +2,12 @@ import React from "react"
 
 const Premiumoption = class extends React.Component {
   componentDidMount() {
-    this.stripe = window.Stripe("pk_test_yhWmIx2CU4WNONLOsBIeJnsi0050nfgRkJ")
+    this.stripe = window.Stripe(process.env.GATSBY_STRIPE_PK_TEST)
   }
   async redirectToCheckout(event) {
     event.preventDefault()
     const { error } = await this.stripe.redirectToCheckout({
-      items: [{ plan: "plan_GKvCx3epKJ9VHI", quantity: 1 }],
+      items: [{ plan: process.env.GATSBY_PREMIUM_PLAN_TM, quantity: 1 }],
       successUrl: `http://localhost:8000/page-2/`,
       cancelUrl: `http://localhost:8000/`,
     })
