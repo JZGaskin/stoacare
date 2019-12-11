@@ -12,8 +12,8 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" />
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      tagline="We Lead the Residents to You"
-      title="workin around netlify"
+      tagline="Residents need a new home, we help get them there."
+      title="Families needing to find a new home for their loved ones are guided to your facility."
       styleClass="default-background"
     />
     <Buy />
