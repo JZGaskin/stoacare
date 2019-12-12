@@ -12,7 +12,7 @@ export default function Buy() {
             <div className="col-md-4">
               <div className="card mb-4 box-shadow">
                 <div className="card-header">
-                  <h4 className="my-0 font-weight-normal">Basic</h4>
+                  <h4 className="my-0 font-weight-normal text-white">Basic</h4>
                 </div>
                 <div className="card-body">
                   <h1>
@@ -32,7 +32,9 @@ export default function Buy() {
             <div className="col-md-4">
               <div className="card mb-4 box-shadow">
                 <div className="card-header">
-                  <h4 className="my-0 font-weight-normal">Standard</h4>
+                  <h4 className="my-0 font-weight-normal text-white">
+                    Standard
+                  </h4>
                 </div>
                 <div className="card-body">
                   <h1>
@@ -52,7 +54,9 @@ export default function Buy() {
             <div className="col-md-4">
               <div className="card mb-4 box-shadow">
                 <div className="card-header">
-                  <h4 className="my-0 font-weight-normal">Premium</h4>
+                  <h4 className="my-0 font-weight-normal text-white">
+                    Premium
+                  </h4>
                 </div>
                 <div className="card-body">
                   <h1>

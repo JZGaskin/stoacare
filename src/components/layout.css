@@ -84,3 +84,17 @@ h6 {
   color: #224a7d;
   font-size: 1.5rem;
 }
+
+.btn-subs {
+  background-color: #4ca2a2;
+  border-style: unset;
+  border-radius: 40px;
+}
+
+.btn-subs:hover {
+  background-color: #288384;
+}
+
+.card-header {
+  background-color: #4ca2a2;
+}

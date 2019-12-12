@@ -19,7 +19,7 @@ const Standardoption = class extends React.Component {
     return (
       <button
         type="button"
-        className="btn btn-lg btn-block btn-primary"
+        className="btn-subs btn-lg btn-block btn-primary"
         onClick={event => this.redirectToCheckout(event)}
       >
         Standard Plan

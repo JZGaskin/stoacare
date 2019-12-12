@@ -16,7 +16,7 @@ export default function BackgroundSection({
         <div className="container">
           <div className="row">
             <div className="col-sm-6 text-left">
-              <h1 className="title text-white display-5 font-weight-bold">
+              <h1 className="title text-dark display-5 font-weight-bold ">
                 {tagline}
               </h1>
               <br />
