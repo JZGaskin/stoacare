@@ -3,9 +3,8 @@
 import React from "react"
 import { Router } from "@reach/router" // comes with gatsby v2
 import Layout from "../components/layout"
-// import NavBar from "../components/Globals/Navbar"
 import Profile from "../components/profile"
-import Main from "./main" // NOT SHOWN
+import Main from "./main"
 import PrivateRoute from "../components/PrivateRoute"
 import Login from "../login"
 

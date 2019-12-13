@@ -1,6 +1,5 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
-import { getUser, isLoggedIn } from "../services/auth"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Info from "../components/Home/Info"
 import SEO from "../components/seo"
@@ -17,20 +16,6 @@ const IndexPage = ({ data }) => (
       title="Families needing to find a new home for their loved ones are guided to your facility."
       styleClass="default-background"
     />
-    <h1>Hello {isLoggedIn() ? getUser().name : "world"}!</h1>
-    <p>
-      {isLoggedIn() ? (
-        <>
-          You are logged in, so check your{" "}
-          <Link to="/app/profile">profile</Link>
-        </>
-      ) : (
-        <>
-          You should <Link to="/app/login">log in</Link> to see restricted
-          content
-        </>
-      )}
-    </p>
     <Buy />
     <Plan />
     <Info />
