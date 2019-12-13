@@ -1,32 +1,43 @@
-export const isBrowser = () => typeof window !== "undefined"
+import netlifyIdentity from "netlify-identity-widget"
 
+export const isBrowser = () => typeof window !== "undefined"
+export const initAuth = () => {
+  if (isBrowser()) {
+    window.netlifyIdentity = netlifyIdentity
+    // You must run this once before trying to interact with the widget
+    netlifyIdentity.init()
+  }
+}
 export const getUser = () =>
-  isBrowser() && window.localStorage.getItem("gatsbyUser")
-    ? JSON.parse(window.localStorage.getItem("gatsbyUser"))
+  isBrowser() && window.localStorage.getItem("netlifyUser")
+    ? JSON.parse(window.localStorage.getItem("netlifyUser"))
     : {}
 
 const setUser = user =>
-  window.localStorage.setItem("gatsbyUser", JSON.stringify(user))
+  window.localStorage.setItem("netlifyUser", JSON.stringify(user))
 
-export const handleLogin = ({ username, password }) => {
-  if (username === `john` && password === `pass`) {
-    return setUser({
-      username: `john`,
-      name: `Johnny`,
-      email: `johnny@example.org`,
+export const handleLogin = callback => {
+  if (isLoggedIn()) {
+    callback(getUser())
+  } else {
+    netlifyIdentity.open()
+    netlifyIdentity.on("login", user => {
+      setUser(user)
+      callback(user)
     })
   }
-
-  return false
 }
 
 export const isLoggedIn = () => {
-  const user = getUser()
-
-  return !!user.username
+  if (!isBrowser()) return false
+  const user = netlifyIdentity.currentUser()
+  return !!user
 }
 
 export const logout = callback => {
-  setUser({})
-  callback()
+  netlifyIdentity.logout()
+  netlifyIdentity.on("logout", () => {
+    setUser({})
+    callback()
+  })
 }

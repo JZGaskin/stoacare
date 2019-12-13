@@ -22,11 +22,11 @@ const IndexPage = ({ data }) => (
       {isLoggedIn() ? (
         <>
           You are logged in, so check your{" "}
-          <Link to="/account/profile">profile</Link>
+          <Link to="/app/profile">profile</Link>
         </>
       ) : (
         <>
-          You should <Link to="/account/login">log in</Link> to see restricted
+          You should <Link to="/app/login">log in</Link> to see restricted
           content
         </>
       )}
