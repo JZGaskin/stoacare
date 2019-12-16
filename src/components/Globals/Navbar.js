@@ -22,6 +22,15 @@ function openNetlifyModal() {
   else console.log("netlifyIdentity not defined")
 }
 
+class NelifyIdentity extends Component {
+  componentDidMount() {
+    initNetlifyIdentity()
+  }
+  render() {
+    return <div></div>
+  }
+}
+
 export default class Navbar extends Component {
   state = {
     navbarOpen: false,
@@ -57,9 +66,9 @@ export default class Navbar extends Component {
   }
 
   render() {
-    initNetlifyIdentity()
     return (
       <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
+        <NelifyIdentity />
         <Link to="/" className="navbar-brand">
           <img className="logo" src={logo} alt="logo" />
         </Link>
