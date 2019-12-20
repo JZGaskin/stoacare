@@ -10,12 +10,14 @@ import Buy from "../components/Home/Buy"
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
+
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      tagline="Residents need a new home, we help get them there."
+      tagline="Tagline"
       title="Families needing to find a new home for their loved ones are guided to your facility."
       styleClass="default-background"
     />
+
     <Buy />
     <Plan />
     <Info />

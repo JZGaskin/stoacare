@@ -106,12 +106,17 @@ export default class Navbar extends Component {
                     Login
                   </Link>
                 </li>
-
-                <Link to="/about">
-                  <button className="btn text-uppercase btn-yellow">
-                    Schedule a Call
-                  </button>
-                </Link>
+              </ul>
+            </div>
+            <div className={this.state.css}>
+              <ul className="navbar-nav ml-auto">
+                <li className="nav-item">
+                  <Link to="/about">
+                    <button className="btn text-uppercase btn-yellow">
+                      Schedule a Call
+                    </button>
+                  </Link>
+                </li>
               </ul>
             </div>
             {/* <Link to="/about">

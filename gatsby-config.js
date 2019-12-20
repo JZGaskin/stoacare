@@ -18,6 +18,18 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-sanity",
+      options: {
+        projectId: "cdee2py9",
+        dataset: "production",
+        watchMode: true,
+        overlayDrafts: true,
+        // a token with read permissions is required
+        // if you have a private dataset
+        token: process.env.MY_SANITY_TOKEN,
+      },
+    },
+    {
       resolve: `gatsby-plugin-create-client-paths`,
       options: { prefixes: [`/app/*`] },
     },
