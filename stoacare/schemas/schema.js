@@ -10,6 +10,8 @@ import category from "./category"
 import post from "./post"
 import author from "./author"
 import maintagline from "./maintagline"
+import main_home from "./main_home"
+import clientlogo from "./clientlogo"
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -27,5 +29,7 @@ export default createSchema({
     // { type: 'typename' } in other document schemas
     blockContent,
     maintagline,
+    main_home,
+    clientlogo,
   ]),
 })
