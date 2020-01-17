@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 import Plan from "../components/Home/Plan"
 import Buy from "../components/Home/Buy"
+import Testimonials from "../components/Home/testimonials"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -13,13 +14,12 @@ const IndexPage = ({ data }) => (
 
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
-      tagline="Tagline"
-      title="Families needing to find a new home for their loved ones are guided to your facility."
       styleClass="default-background"
     />
 
-    <Buy />
     <Plan />
+    <Testimonials />
+    <Buy />
     <Info />
   </Layout>
 )

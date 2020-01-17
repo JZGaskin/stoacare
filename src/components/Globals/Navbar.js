@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
 import logo from "../../images/logo.png"
+import Calltoaction from "../Home/Calltoaction"
 
 //Imports Netlify Identity script into HTML of Site
 //Must be called from react life-cycle function
@@ -81,6 +82,7 @@ export default class Navbar extends Component {
         </button>
 
         {/* //links to pages */}
+
         <div className={this.state.css}>
           <ul className="navbar-nav ml-auto">
             {this.state.links.map(link => {
@@ -113,7 +115,7 @@ export default class Navbar extends Component {
                 <li className="nav-item">
                   <Link to="/about">
                     <button className="btn text-uppercase btn-yellow">
-                      Schedule a Call
+                      <Calltoaction />
                     </button>
                   </Link>
                 </li>

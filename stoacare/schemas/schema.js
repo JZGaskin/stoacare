@@ -12,6 +12,11 @@ import author from "./author"
 import maintagline from "./maintagline"
 import main_home from "./main_home"
 import clientlogo from "./clientlogo"
+import background from "./background"
+import valueproposition from "./valueproposition"
+import theplan from "./theplan"
+import testimonials from "./testimonials"
+import companylogoimg from "./companylogoimg"
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -22,14 +27,19 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
+    // When added to this list, object types can be used as
+    // { type: 'typename' } in other document schemas
     post,
     author,
     category,
-    // When added to this list, object types can be used as
-    // { type: 'typename' } in other document schemas
     blockContent,
     maintagline,
     main_home,
     clientlogo,
+    background,
+    valueproposition,
+    theplan,
+    testimonials,
+    companylogoimg,
   ]),
 })

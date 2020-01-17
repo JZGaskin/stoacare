@@ -6,10 +6,10 @@ export default function Plan() {
     <section className="py-5">
       <div className="container">
         <h1 className="plan-title text-center text-capitalize">
-          custom websites made easy
+          We Bring Residents to You
         </h1>
         <p className="plan-subtitle text-center text-capitalize">
-          Get a <strong>blazing fast website that just works</strong> in
+          Get <strong>resident referrals</strong> in
           <strong> 3 easy steps</strong>
         </p>
         <br />
@@ -33,8 +33,8 @@ export default function Plan() {
             <br />
             <h6 className="plan-label text-center">Get a Customized Plan</h6>
             <p>
-              We'll work with your goals to design the perfect website for your
-              business.
+              We'll work with your goals to design the perfect representation
+              for your business.
             </p>
           </div>
           <div className="col-sm-4 text-center">
