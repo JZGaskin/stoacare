@@ -47,11 +47,6 @@ export default class Navbar extends Component {
         path: "/about",
         text: "about",
       },
-      {
-        id: 3,
-        path: "/pricing",
-        text: "pricing",
-      },
     ],
   }
   navbarHandler = () => {
@@ -94,7 +89,15 @@ export default class Navbar extends Component {
                 </li>
               )
             })}
-
+            <div className={this.state.css}>
+              <ul className="navbar-nav ml-auto">
+                <li className="nav-item">
+                  <Link to="/#prices" className="nav-link text-capitalize">
+                    pricing
+                  </Link>
+                </li>
+              </ul>
+            </div>
             {/* //link to login modal */}
             <div className={this.state.css}>
               <ul className="navbar-nav ml-auto">
@@ -121,11 +124,6 @@ export default class Navbar extends Component {
                 </li>
               </ul>
             </div>
-            {/* <Link to="/about">
-              <button className="btn text-uppercase btn-yellow">
-                Schedule a Call
-              </button>
-            </Link> */}
           </ul>
         </div>
       </nav>

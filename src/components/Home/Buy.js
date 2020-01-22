@@ -1,13 +1,15 @@
 import React from "react"
+import Title from "../Globals/Title"
 import Basicoption from "../Subscriptions/Basicoption"
 import Standardoption from "../Subscriptions/Standardoption"
 import Premiumoption from "../Subscriptions/Premiumoption"
 
 export default function Buy() {
   return (
-    <section className="py-5">
+    <section className="py-5" id="prices">
       <div className="text-center">
         <div className="container">
+          <Title title="Plans that Fit Your Needs" />
           <div className="row pt-4">
             <div className="col-md-4">
               <div className="card mb-4 box-shadow">

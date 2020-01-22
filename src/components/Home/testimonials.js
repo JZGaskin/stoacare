@@ -1,7 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
-import Img from "gatsby-image"
 
 const Wrapper = styled.section`
   background-color: #343a40 !important;
@@ -28,8 +26,6 @@ const Card = styled.div`
   margin-top: 25px;
   margin-bottom: 25px;
   position: relative;
-
-  /* margin-left: 25px; */
 `
 const CardHeader = styled.header`
   img {
@@ -48,11 +44,7 @@ const Small = styled.small`
   margin-bottom: 7px;
 `
 const CardBody = styled.div`
-  /* border-radius: 0px !important;
-  box-shadow: 2px 2px 10px 0px rgb(100, 108, 170); */
   background-color: var(--mainWhite);
-  /* width: 20rem; */
-  /* margin-left: 15px; */
   @media (max-width: 390px) {
     .card {
       width: unset !important;
@@ -75,17 +67,6 @@ const CardFooter = styled.footer`
   border-radius: 20px !important;
 `
 export default function Testimonials() {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "BRme.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
   return (
     <Wrapper>
       <Container className="container">
@@ -190,9 +171,9 @@ export default function Testimonials() {
             <Card className="card">
               <CardHeader className="card-header bg-white mt-4 border-0">
                 <div className="media ">
-                  <Img
+                  <img
                     className="align-self-center rounded-circle outside img-fluid"
-                    fluid={data.placeholderImage.childImageSharp.fluid}
+                    src="https://i.imgur.com/At1IG6H.png"
                     width="70"
                     height="70"
                     alt="headshot3"

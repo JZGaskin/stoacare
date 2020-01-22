@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => (
 
     <Plan />
     <Testimonials />
-    <Buy />
+    <Buy id="prices" />
     <Info />
   </Layout>
 )
